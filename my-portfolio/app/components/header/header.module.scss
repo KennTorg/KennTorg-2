@@ -1,0 +1,46 @@
+/* Header.module.css */
+
+.home_header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "playfair display";
+  padding: 20px;
+  min-height: 70px;
+  background-color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+  text-decoration: none;
+  color: #171717;
+}
+
+/* Navigation links */
+.nav_links {
+  display: flex;
+  align-items: center;
+}
+
+/* Navigation menu (the <ul> element) */
+.nav_menu {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 20px;
+}
+
+/* Individual navigation link (the <li> element) */
+.nav_link {
+  font-size: 1rem;
+}
+.nav_link a {
+  text-decoration: none;
+  color: #171717;
+}
+
+/* Add a hover effect on the links */
+.nav_link a:hover {
+  text-decoration: underline 2px;
+}
