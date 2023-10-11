@@ -1,0 +1,89 @@
+.work_container h2 {
+  display: flex;
+  justify-content: center;
+  animation: slideInRight 1s ease forwards;
+}
+
+.work_cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  align-items: flex-end; /* Align cards to the bottom */
+  margin-top: 3rem;
+  max-width: 100%;
+  opacity: 0; /* Start with opacity 0 */
+  animation: fadeIn 1s ease forwards;
+}
+
+@keyframes slideInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.work_card {
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  height: 450px;
+  margin: auto;
+  font-family: "lato";
+  background-color: transparent;
+  transition: transform 0.2s, box-shadow 0.2s;
+
+  &:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  }
+}
+
+.work_card h3 {
+  text-align: center;
+  flex-grow: 1;
+}
+
+.work_card p {
+  padding: 10px;
+  flex-grow: 2;
+}
+
+.work_card img {
+  width: 300px;
+  height: 200px;
+  flex-grow: 3;
+}
+
+.work_card button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #171717;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+  flex-grow: 1;
+
+  &:hover {
+    opacity: 90%;
+  }
+}

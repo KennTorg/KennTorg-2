@@ -1,0 +1,69 @@
+.home_header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "playfair display";
+  padding: 20px;
+  min-height: 70px;
+  background-color: white;
+  transition: min-height 1s ease;
+}
+
+.sticky {
+  position: fixed;
+  justify-content: space-between;
+  align-items: center;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+  min-height: 70px;
+  background-color: transparent;
+  transition: background-color 0.3s ease;
+
+  .nav_links {
+    margin-right: 20px;
+  }
+}
+
+.logo {
+  text-decoration: none;
+  color: #171717;
+  cursor: pointer;
+  font-family: "playfair display", "aldrich", "roboto";
+}
+
+.sticky .nav_links {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 20px;
+}
+
+.nav_links {
+  display: flex;
+  align-items: center;
+}
+
+.nav_menu {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 20px;
+}
+
+.nav_link {
+  font-size: 1rem;
+  transition: transform 0.2s, text-decoration 0.5s;
+}
+.nav_link a {
+  text-decoration: none;
+  color: #171717;
+
+  &:hover {
+    transform: scale(1.05);
+    text-decoration: underline 2px solid;
+    transition: text-decoration 0.5s;
+  }
+}
