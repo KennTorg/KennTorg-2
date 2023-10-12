@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import styles from "./Footer.module.scss";
+import styles from "./footer.module.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faFacebookSquare,
