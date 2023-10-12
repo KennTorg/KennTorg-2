@@ -1,4 +1,6 @@
-import "./styles/global.scss";
+import React from "react";
+import Head from "next/head";
+import "../styles/global.scss";
 
 export const metadata = {
   title: "Portfolio 2",
@@ -8,6 +10,10 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang='en'>
+      <Head>
+        <title>{metadata.title}</title>
+        <meta name='description' content={metadata.description} />
+      </Head>
       <body>{children}</body>
     </html>
   );
