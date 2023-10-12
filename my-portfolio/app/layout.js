@@ -1,6 +1,6 @@
 import React from "react";
 import Head from "next/head";
-import "../styles/global.scss";
+import "./styles/global.scss";
 
 export const metadata = {
   title: "Portfolio 2",
